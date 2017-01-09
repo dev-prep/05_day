@@ -1,14 +1,27 @@
 # DEV PREP PART 5: BOOTSTRAP JS COMPONENTS AND DEBUGGING JS
 
-## Schedule
+## Topics
 
-10:00 - 11:30    
-<em>11:30 - 11:45 break</em>  
-11:45 - 1:00   
-<strong>1:00 - 2:00 lunch </strong>  
-2:00 - 3:30   
-<em>3:30 - 3:45 break</em>  
-3:45 - 5:00  
+- JS Components in Bootstrap
+- Debugging JS
+
+## Takeaways
+
+- Identify and resolve common and uncommon "logical errors" that affect the results of your program
+- Use logs to troubleshoot errors in an application (console log in Dev Tools)
+- Conduct real-time debugging in the browser (start small, triangulation, remove code)
+- Access properties of a class using helper methods
+- Use debuggers and breakpoints to identify logical errors in expressions
+- Use Bootstrap’s JS Components such as modals
+- Understand what Outcomes is and what sets GA apart
+- Discuss tech terms and different roles
+
+## Prereqs & Preparation
+
+- Free [Github account](https://github.com/join)
+- Mac laptop
+- Complete projects 1 and 2 on [Dash](https://dash.generalassemb.ly/)
+- Dev Prep Part 4 **OR** Parts 1 - 8 of [codecademy’s JS course](https://www.codecademy.com/learn/javascript)
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
