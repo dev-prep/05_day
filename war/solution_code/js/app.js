@@ -5,8 +5,8 @@ console.log('connected')
 var player1
 var player2
 var suits = ['spades', 'hearts', 'clubs', 'diamonds']
-// var vals = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace']
-var vals = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+var vals = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace']
+// var vals = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 var deck = []
 var pot = []
 
@@ -18,15 +18,15 @@ function Player(name) {
 }
 
 function getNumPlayers() {
-	// var numPlayers = prompt('Are there 1 or 2 players?')
-	// getPlayerNames(numPlayers)
-	getPlayerNames(1)
+	var numPlayers = prompt('Are there 1 or 2 players?')
+	getPlayerNames(numPlayers)
+	// getPlayerNames(1)
 }
 
 function getPlayerNames(num) {
-	// var p1name = prompt('Player 1, please enter your name')
-	// player1 = new Player(p1name)
-	player1 = new Player('Kate')
+	var p1name = prompt('Player 1, please enter your name')
+	player1 = new Player(p1name)
+	// player1 = new Player('Kate')
 	if (num == 2) {
 		var p2name = prompt('Player 2, please enter your name')
 		player2 = new Player(p2name)
@@ -70,7 +70,7 @@ function shuffle() {
 
 function deal(cards) {
 	var half = Math.floor(cards.length/2)
-	player1.hand = cards.splice(0, 50)
+	player1.hand = cards.splice(0, half)
 	player2.hand = cards
 }
 
@@ -98,7 +98,7 @@ function checkForWin() {
 	if (player1.hand.length === 0 || player2.hand.length === 0) {
 		var winner = player1.hand.length > 0 ? player1.name : player2.name
 		console.log(winner + ' wins! Redealing cards...')
-		// newDeck()
+		newDeck()
 	}
 }
 
