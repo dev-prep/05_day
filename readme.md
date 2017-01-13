@@ -10,7 +10,6 @@
 - Identify and resolve common and uncommon "logical errors" that affect the results of your program
 - Use logs to troubleshoot errors in an application (console log in Dev Tools)
 - Conduct real-time debugging in the browser (start small, triangulation, remove code)
-- Access properties of a class using helper methods
 - Use debuggers and breakpoints to identify logical errors in expressions
 - Use Bootstrap’s JS Components such as modals
 - Understand what Outcomes is and what sets GA apart
