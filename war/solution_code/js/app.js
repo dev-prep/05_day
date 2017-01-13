@@ -97,6 +97,12 @@ function battle() {
 function checkForWin() {
 	if (player1.hand.length === 0 || player2.hand.length === 0) {
 		var winner = player1.hand.length > 0 ? player1.name : player2.name
+		// var winner
+		// if(player1.hand.length > 0) {
+		// 	winner = player1.name
+		// } else {
+		// 	winner = player2.name
+		// }
 		console.log(winner + ' wins! Redealing cards...')
 		newDeck()
 	}
